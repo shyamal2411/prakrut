@@ -1,0 +1,17 @@
+.landing-container {
+    display: flex;
+    min-height: 90vh;
+    justify-content: space-between;
+    align-items: center;
+    /* color: #000000; */
+    padding: 0 32px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.landing-header {
+    font-size: 70px;
+    letter-spacing: 4px;
+    margin: 0;
+}
