@@ -1,8 +1,7 @@
-
-import React from 'react'
-import './Landing.css';
-import { makeStyles } from '@material-ui/core/styles';
-import flash from './hero.png';
+import React from "react";
+import "./Landing.css";
+import { makeStyles } from "@material-ui/core/styles";
+import flash from "./hero.png";
 
 const useStyles = makeStyles((theme) => ({
   // appBar: {
@@ -22,24 +21,51 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "4rem",
     [theme.breakpoints.down("sm")]: {
       height: 300,
-      fontSize: "3em"
-    }
-  }
+      fontSize: "3em",
+    },
+  },
 }));
 
 function Landing() {
-  // const classes = useStyles(); // this is navbar part,remove this, if asked (BLOG | MOMAN.AI)
- return(
+  const classes = useStyles(); // this is navbar part,remove this, if asked (BLOG | MOMAN.AI)
+  return (
     <div className="landing-container">
-     <div data-aos="fade-down-right" className="landing-left">
-        <p className="landing-header">The mango was first grown in 1931 by Junagadh Wazir Sale Bhai in Vanthali. About 75 grafts were then planted in the foothills of Girnar at the Junagadh Laal Dhori Farm. The mango is said to have been known as "KESAR" since 1934 when the Nawab of Junagadh Muhammad Mahabat Khan III said "This is KEASAR" after looking at the orange pulp of the KESAR Mango fruit. The Kesar being hindi for Saffron.</p>
-    </div>
+      <div className="first-component">
+        <div data-aos="fade-down-right" className="first-left">
+          <p className="first-header">
+            The mango was first grown in 1931 by Junagadh Wazir Sale Bhai in
+            Vanthali. About 75 grafts were then planted in the foothills of
+            Girnar at the Junagadh Laal Dhori Farm. The mango is said to have
+            been known as "KESAR" since 1934 when the Nawab of Junagadh Muhammad
+            Mahabat Khan III said "This is KEASAR" after looking at the orange
+            pulp of the KESAR Mango fruit. The Kesar being hindi for Saffron.
+          </p>
+        </div>
 
-    <div className="landing-right">
-    <img src={flash} className='flash-image'/>
+        <div className="first-right">
+          <img src={flash} className="flash-image" alt="hero"/>
+        </div>
+      </div>
+      {/* Second component */}
+      <div className="second-component">
+        <div className="second-left">
+          <img src={flash} className="flash-image1" alt="hero"/>
+        </div>
+
+        {/* <div data-aos="fade-down-left" className="second-right"> */}
+        <div className="second-right">
+          <p className="second-header">
+            The mango was first grown in 1931 by amdavad Wazir Sale Bhai in
+            Vanthali. About 75 grafts were then planted in the foothills of
+            Girnar at the Junagadh Laal Dhori Farm. The mango is said to have
+            been known as "KESAR" since 1934 when the Nawab of Junagadh Muhammad
+            Mahabat Khan III said "This is KEASAR" after looking at the orange
+            pulp of the KESAR Mango fruit. The Kesar being hindi for Saffron.
+          </p>
+        </div>
+      </div>
     </div>
-  </div>
-);
-};
+  );
+}
 
 export default Landing;
