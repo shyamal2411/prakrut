@@ -56,7 +56,7 @@ function Landing() {
         <div className="second-right">
           <p className="second-header">
             The mango was first grown in 1931 by amdavad Wazir Sale Bhai in
-            Vanthali. About 75 grafts were then planted in the foothills of
+            Vanthali. About 465 grafts were then planted in the foothills of
             Girnar at the Junagadh Laal Dhori Farm. The mango is said to have
             been known as "KESAR" since 1934 when the Nawab of Junagadh Muhammad
             Mahabat Khan III said "This is KEASAR" after looking at the orange
